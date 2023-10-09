@@ -20,7 +20,7 @@ class USBConnection {
 
   ~USBConnection() { ids.push(ID); }
 
-  int get_id() const { return ID; }
+  int get_id() { return ID; }
 };
 
 std::stack<int> USBConnection::ids({3, 2, 1});
